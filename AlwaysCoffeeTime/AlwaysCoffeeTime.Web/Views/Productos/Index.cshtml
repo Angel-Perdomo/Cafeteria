@@ -1,5 +1,5 @@
 ﻿
-
+@model List<AlwaysCoffeeTime.BL.Producto>
 
 @{
     ViewBag.Title = "Index";
@@ -7,6 +7,9 @@
 
 <h2>Productos</h2>
 
-
+@foreach (var producto in Model)
+{
+    <p>@producto.Codigo @producto.Descripcion @producto.Precio @producto.Categoria @producto.Existencia @producto.Activo</p>
+}
 
 

@@ -1,4 +1,4 @@
-﻿using AlwaysCoffeeTime.Web.Models;
+﻿using AlwaysCoffeeTime.BL;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,10 @@ namespace AlwaysCoffeeTime.Web.Controllers
         // GET: Productos
         public ActionResult Index()
         {
-            return View();
+            var productosBL = new ProductosBL();
+            var listaDeProductos = productosBL.ObtenerProductos();
+
+            return View(listaDeProductos);
         }
     }
 }

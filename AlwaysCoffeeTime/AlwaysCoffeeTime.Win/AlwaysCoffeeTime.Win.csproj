@@ -79,6 +79,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AlwaysCoffeeTime.BL\AlwaysCoffeeTime.BL.csproj">
+      <Project>{f77213ea-c040-43be-8f6b-6fb783944490}</Project>
+      <Name>AlwaysCoffeeTime.BL</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

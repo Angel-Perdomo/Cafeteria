@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AlwaysCoffeeTime.BL;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -19,7 +20,13 @@ namespace AlwaysCoffeeTime.Win
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola");
+            var productosBL = new ProductosBL();
+            var listaDeProductos = productosBL.ObtenerProductos();
+
+            foreach (var producto in listaDeProductos)
+            {
+                MessageBox.Show(producto.Descripcion);
+            }
         }
     }
 }
