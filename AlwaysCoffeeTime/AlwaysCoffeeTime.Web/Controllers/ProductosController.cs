@@ -30,7 +30,7 @@ namespace AlwaysCoffeeTime.Web.Controllers
             var producto3 = new ProductoModel();
             producto3.Codigo = 3;
             producto3.Descripcion = "Capuchino";
-            producto3.Precio = 55;
+            producto3.Precio = 56;
             producto3.Categoria = "CAFECITOS";
             producto3.Activo = true;
 
