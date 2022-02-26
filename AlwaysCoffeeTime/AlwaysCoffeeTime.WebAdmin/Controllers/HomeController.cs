@@ -1,15 +1,14 @@
-﻿using AlwaysCoffeeTime.Web.Models;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace AlwaysCoffeeTime.Web.Controllers
+namespace AlwaysCoffeeTime.WebAdmin.Controllers
 {
-    public class ProductosController : Controller
+    public class HomeController : Controller
     {
-        // GET: Productos
+        // GET: Home
         public ActionResult Index()
         {
             return View();
